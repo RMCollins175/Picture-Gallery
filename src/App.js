@@ -31,11 +31,13 @@ export default class App extends Component {
     return (
       <div>
         <NavBar />
-    
+
         <Switch>
-          <Home
-          
-          
+          <Route
+            exact
+            path="/"
+            render={() => <Home />} />}
+          />
           />
           <Route
             exact

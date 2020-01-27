@@ -1,0 +1,73 @@
+.Picture img {
+    width: 90%;
+    filter: grayscale();
+    transition: 0.3s ease;
+}
+
+.Picture:hover img { 
+    /* changes color when link as well as image is hovered over */
+    filter: none
+}
+
+.Picture .underline {
+    text-decoration: none;
+    border: 4px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 10px;
+    position: relative;
+  }
+
+  .Picture .underline::after {
+    width: 0%;
+    height: 5px;
+    display: block;
+    background-color: black;
+    content: " ";
+    position: absolute;
+    top: 34px;
+    left: 50%;
+    transition: left 0.4s cubic-bezier(0.215, 0.61, 0.355, 1),
+      width 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  .Picture:hover .underline::after {
+    width: 100%;
+    top: 34px;
+    left: 0;
+  }
+
+
+
+  /* a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  } */
