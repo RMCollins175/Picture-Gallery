@@ -1,0 +1,8 @@
+#header {
+    background-image: url("https://source.unsplash.com/user/rmcollins175/2ZrR9GB6zSk");
+    background-size: cover;
+}
+
+.jumbotron {
+    min-height: 400px;
+}
