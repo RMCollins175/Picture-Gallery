@@ -38,6 +38,7 @@ export default function Home() {
               </div>
               <div class="card-footer">
                 <small class="text-muted">Last updated 3 mins ago</small>
+                {/* ADD DATE ADDED INTO PROPS AND COUNTDOWN FROM THERE */}
                 <div class="align-items-start">
                   <a href="" class="btn btn-outline-success btn-sm">
                     Download Link
